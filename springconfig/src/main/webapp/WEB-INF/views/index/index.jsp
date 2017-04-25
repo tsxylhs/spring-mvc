@@ -8,13 +8,18 @@
 <title>Insert title here</title>
 </head>
 <body>
-${command}
+${command}<br>
 <c:forEach items="${booklist}" var ="node">
-<c:out value="${node}"></c:out>
+<c:out value="${node}"></c:out><br>
 </c:forEach>
   <c:forEach items="${MAP}" var="node">  
-        姓名：<c:out value="${node.key}"></c:out>  
-        住址：<c:out value="${node.value}"></c:out>  
+      <c:out value="${node.key}"></c:out>  <br>
+       <c:out value="${node.value}"></c:out>  <br>
+        <br/>  
+   </c:forEach> 
+     <c:forEach items="${map}" var="node">  
+       <c:out value="${node.key}"></c:out><br>  
+       <c:out value="${node.value}"></c:out>  
         <br/>  
    </c:forEach> 
 </body>
