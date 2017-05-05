@@ -1,9 +1,8 @@
-function login(){
-var login=document.getElementById("login");
-  
-}
-function regist(){
-	var regist=document.getElementById("regist");
-	alert("nihao");
-	
-}
+(function login(){
+	function init(){
+		document.querySelector("#btn_login").addEventListener("click",function(){
+	alert("haha")
+		},false);
+	}
+
+})();

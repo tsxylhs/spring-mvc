@@ -6,8 +6,10 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
+		<link rel="stylesheet" type="text/css" href="/css/index.css"/>
 </head>
 <body>
+<h1>hahah</h1>
 ${command}<br>
 <c:forEach items="${booklist}" var ="node">
 <c:out value="${node}"></c:out><br>
@@ -21,6 +23,12 @@ ${command}<br>
        <c:out value="${node.key}"></c:out><br>  
        <c:out value="${node.value}"></c:out>  
         <br/>  
+   </c:forEach> 
+    <c:forEach  var="user" items="${list1}" >  
+      ${user.username}<br>
+      ${user.userpassword}<br>
+      你好
+         
    </c:forEach> 
 </body>
 </html>

@@ -35,6 +35,8 @@ public class loginController {
          dataDao.insteruser(command);
 		ModelAndView MV=new ModelAndView();
 		MV.setViewName("/index/index");
+	    List<user> user=new ArrayList<user>();
+	    user=dataDao.select();
 		
 	  MV.addObject("command","hello name");
 		List<String> list=new ArrayList<String>();
@@ -46,6 +48,7 @@ public class loginController {
 	     map.put("username",username);
 	     map.put("userpassword", userpassword);
 	     MV.addObject("MAP",map);
+	     MV.addObject("list1",user);
 	     
 		
 		return MV;
